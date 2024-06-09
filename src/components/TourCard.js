@@ -65,8 +65,9 @@ const TourCard = ({ tour }) => {
               marginTop={3}
             >
               <Rating
+                data-testid="tour-rating"
                 name="read-only"
-                value={tour.rating}
+                aria-valuenow={tour.rating}
                 precision={0.5}
                 readOnly
                 size="small"
